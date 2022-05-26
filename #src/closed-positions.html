@@ -1,0 +1,339 @@
+@@include('components/_head.html',{
+    "title":"Closed Positions"
+    })
+    <div class="wrapper">
+        <main class="page">
+            <div class="container">
+                @@include('components/_header.html',{})
+                <div class="positions">
+                    <div class="positions__upper-content">
+                        <div class="positions__upper-container">
+                            <a href="overview-full.html"><span><i class="fad fa-grip-horizontal"></i></span> Overview</a>
+                            <div class="positions__line"></div>
+                            <a href="live-chart.html"><span><i class="fad fa-chart-bar"></i></span> Live Chart</a>
+                            <div class="positions__line"></div>
+                            <a href="open-positions.html"><span><i class="fad fa-location"></i></span>Open Positions <span><h2>7</h2></span></a>
+                            <div class="positions__line"></div>
+                            <a href="closed-positions.html"><span><i class="fad fa-location-slash"></i></span>Close Positions <span><h2 class="close">15</h2></span></a>
+                            <div class="positions__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-map-signs"></i></span> Deferred</a>
+                            <div class="positions__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-store"></i></span> Open Order</a>
+                            <div class="positions__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-store-slash"></i></span> Closed Order</a>
+                            <div class="positions__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-file-excel"></i></span> Failed</a>
+                            <div class="positions__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-history"></i></span> History Order</a>
+                            <div class="positions__line"></div>
+                        </div>
+                    </div>
+                    <div class="positions__table">
+                        <table class="table books-table position-table">
+                            <tr>
+                                <th>Name</th> 
+                                <th><i class="fad fa-repeat-alt"></i></th>                 
+                                <th>Live</th>
+                                <th>Last</th>
+                                <th>Rpt</th>
+                                <th>Label</th>
+                                <th><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                <th><i class="fas fa-play"></i></th>
+                                <th>Status</th>
+                                <th><i class="fas fa-play"></i></th>
+                                <th>Mod</th>
+                                <th>Profit/loss</th>
+                                <th>Price Diff.</th>
+                                <th>Target</th>
+                                <th>USDREQ</th>
+                                <th>Filled</th>
+                                <th>TP%</th>
+                                <th>Runtime</th>
+                                <th>Avg. Buy</th>
+                                <th>Avg. Sell</th>
+                                <th>Drivetime</th>
+                                <th>Fill</th>
+                                <th>Fill. Buy</th>
+                                <th>Fill. Sell</th>
+                                <th>Fees</th>
+                                <th>Offset</th>
+                                <th>Lst. Upd</th>
+                                <th>Start</th>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/binance.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">7m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.03 BUSD</td>
+                                <td>0.4</td>
+                                <td>0.35</td>
+                                <td>$15</td>
+                                <td>26.13</td>
+                                <td class="table-green-bg">0.24%</td>
+                                <td class="table-green-bg2">0:37:50</td>
+                                <td>177.00</td>
+                                <td>188.31</td>
+                                <td class="table-bg-yellow">00:36:37</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:05:10</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/navc.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">4m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.06 BUSD</td>
+                                <td>0.005</td>
+                                <td>0/10</td>
+                                <td>$33</td>
+                                <td>26.13</td>
+                                <td class="table-green-bg">0.17%</td>
+                                <td class="table-green-bg3">0:00:53</td>
+                                <td>2.5363</td>
+                                <td>2.3173</td>
+                                <td>00:13:12</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:02:37</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/binance.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">7m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.03 BUSD</td>
+                                <td>0.4</td>
+                                <td>0.35</td>
+                                <td>$15</td>
+                                <td>0.3611</td>
+                                <td class="table-green-bg">0.24%</td>
+                                <td class="table-green-bg2">0:37:50</td>
+                                <td>177.00</td>
+                                <td>188.31</td>
+                                <td class="table-bg-yellow">00:36:37</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:05:10</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/navc.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">4m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.06 BUSD</td>   
+                                <td>0.005</td>
+                                <td>0/10</td>
+                                <td>$33</td>
+                                <td>26.13</td>
+                                <td class="table-green-bg">0.17%</td>
+                                <td class="table-green-bg3">0:00:53</td>
+                                <td>2.5363</td>
+                                <td>2.3173</td>
+                                <td>00:13:12</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:02:37</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/binance.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">7m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.03 BUSD</td>
+                                <td>0.4</td>
+                                <td>0.35</td>
+                                <td>$15</td>
+                                <td>0.3611</td>
+                                <td class="table-green-bg">0.24%</td>
+                                <td class="table-green-bg2">0:37:50</td>
+                                <td>177.00</td>
+                                <td>188.31</td>
+                                <td>00:36:37</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:05:10</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/binance.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">7m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.03 BUSD</td>
+                                <td>0.4</td>
+                                <td>0.35</td>
+                                <td>$15</td>
+                                <td>0.3611</td>
+                                <td class="table-green-bg">0.24%</td>
+                                <td class="table-green-bg2">0:37:50</td>
+                                <td>177.00</td>
+                                <td>188.31</td>
+                                <td>00:36:37</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:05:10</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/navc.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">4m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.06 BUSD</td>
+                                <td>0.005</td>
+                                <td>0/10</td>
+                                <td>$33</td>
+                                <td>26.13</td>
+                                <td class="table-green-bg">0.17%</td>
+                                <td class="table-green-bg3">0:00:53</td>
+                                <td>2.5363</td>
+                                <td>2.3173</td>
+                                <td>00:13:12</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:02:37</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/binance.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">7m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.03 BUSD</td>
+                                <td>0.4</td>
+                                <td>0.35</td>
+                                <td>$15</td>
+                                <td>0.3611</td>
+                                <td class="table-green-bg">0.24%</td>
+                                <td class="table-green-bg2">0:37:50</td>
+                                <td>177.00</td>
+                                <td>188.31</td>
+                                <td class="table-bg-yellow">00:36:37</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:05:10</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                            <tr>
+                                <td class="first-row"><span><img src="img/bcoi.png" alt=""> <img src="img/binance.png" alt="">XPC/MINT</span></td>
+                                <td><i class="fad fa-repeat-alt"></i></td>
+                                <td><i class="fad fa-chart-bar"></i></td>
+                                <td class="table-green-bg3">7m</td>
+                                <td class="table-blue-bg">1/1</td>
+                                <td class="table-blue-bg">DMID1</td>
+                                <td class="table-blue-bg"><i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td class="table-green-bg2">2 of 2</td>
+                                <td class="table-green-bg"><i class="fad fa-check-double"></i></td>
+                                <td><i class="fad fa-book"></i></td>
+                                <td class="table-green-bg">0.03 BUSD</td>
+                                <td>0.4</td>
+                                <td>0.35</td>
+                                <td>$15</td>
+                                <td>0.3611</td>
+                                <td class="table-green-bg">0.24%</td>
+                                <td class="table-green-bg2">0:37:50</td>
+                                <td>177.00</td>
+                                <td>188.31</td>
+                                <td>00:36:37</td>
+                                <td class="table-green-bg3">100%</td>
+                                <td class="table-green-bg">0.742</td>
+                                <td class="table-green-bg">0.361</td>
+                                <td class="table-green-bg3">No</td>
+                                <td>None</td>
+                                <td>11:05:10</td>
+                                <td>09 Dec 21 10:27</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('components/_footer.html',{})
+    </div>

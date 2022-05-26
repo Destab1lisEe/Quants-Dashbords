@@ -1,0 +1,254 @@
+
+	@@include('components/_head.html',{
+        "title":"Edit Exchange Connection"
+        })
+        <div class="wrapper">
+            <main class="page">
+                <div class="container">
+                    @@include('components/_header.html',{})
+                    <section class="dashboard">
+                        <div class="dashboard__main-grid">
+                            <div class="sidebar-wrapper">
+                                <div class="dashboard__navigation">
+                                <div class="dashboard__button">
+                                    <img class="open" src="img/vector.png" alt="">
+                                </div>
+                                <div class="dashboard__management">
+                                    <h1>
+                                        API Key Management
+                                    </h1>
+                                    <p>
+                                        Enter your API key information from your 
+                                        choosen exchange.
+                                         
+                                    </p>
+                                </div>
+                                <div class="dashboard__search">
+                                    <p>Search your connections</p>
+                                    <div class="search">
+                                        <input type="text" placeholder="Search APIs">
+                                        <i class="fad fa-search"></i>
+                                    </div>
+                                    <p>Active Connections</p>
+                                    <div class="dashboard__connections">
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/binance.png" alt="">
+                                                <h2>Binance</h2>
+                                            </div>
+                                            <i class="fad fa-key"></i>
+                                        </div>
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/zcash.png" alt="">
+                                                <h2>Zcash</h2>
+                                            </div>
+                                            <i class="fad fa-key"></i>
+                                        </div>
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/vitae.png" alt="">
+                                                <h2>Vitae</h2>
+                                            </div>
+                                            <i class="fad fa-key"></i>
+                                        </div>
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/navcoin.png" alt="">
+                                                <h2>NavCoin</h2>
+                                            </div>
+                                            <i class="fad fa-key"></i>
+                                        </div>
+                                    </div>
+                                    <p>Inactive Connections</p>
+                                    <div class="dashboard__connections">
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/bridgecoin.png" alt="">
+                                                <h2>BridgeCoin</h2>
+                                            </div>
+                                            <i class="fad fa-key red"></i>
+                                        </div>
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/faircoin.png" alt="">
+                                                <h2>Faircoin</h2>
+                                            </div>
+                                            <i class="fad fa-key red"></i>
+                                        </div>
+                                        <div class="connection">
+                                            <div class="coin">
+                                                <img src="img/enjincoin.png" alt="">
+                                                <h2>Enjin Coin</h2>
+                                            </div>
+                                            <i class="fad fa-key red"></i>
+                                        </div>
+                                    </div>
+                                    <p>Add a new exchange</p>
+                                    <a href="#" class="add-button"><span><img src="img/plus.png" alt=""></span> Add Exchange</a>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="dashboard__create">
+                                <div class="dashboard__create-titles">
+                                    <h1>Create & Connect new aPI key</h1>
+                                    <p>Enter your new API key details.</p>
+                                </div>
+                                <div class="dashboard__create-content">
+                                    <div class="dashboard__create-input">
+                                        <p>Label (Memorable name)</p>
+                                        <input type="text" placeholder="my binance api for the app">
+                                    </div>
+                                    <div class="dashboard__create-selector">
+                                        <p>Exchange</p>
+                                        <div class="select-container">
+                                            <select name="">
+                                                    <option value="asd"><span></span> Binance</option>
+                                                    <option value="asd">Coin 2</option>
+                                                    <option value="asd">Coin 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard__create-input">
+                                        <p>API Key (API Token)</p>
+                                        <input type="text" placeholder="3GrAOfU7PvTjxKUuePVNbAcT5vY79gMUDhM130sSa2YAV">
+                                    </div>
+                                    <div class="dashboard__create-selector">
+                                        <p>Secret</p>
+                                        <div class="select-container-secret">
+                                            <select name="">
+                                                    <option value="asd">Private Key</option>
+                                                    <option value="asd">Secret 2</option>
+                                                    <option value="asd">Secret 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard__save-button">
+                                        <a href="#" class="add-button">Save Changes</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard__balances">
+                                <div class="dashboard__balance-title">
+                                    <h1>API Balances</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
+                                </div>
+                                <div class="dashboard__balance-table">
+                                    <table class="table exchange-table">
+                                        <tr>
+                                            <th>Exchange</th> 
+                                            <th>Asset</th>
+                                            <th>Current Bid</th>
+                                            <th>Free</th>
+                                            <th>Used</th>
+                                            <th>Total</th>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt="">Binance</span> </td>
+                                            <td><span><img src="img/binance.png" alt="">BTNC</span></td>
+                                            <td class="p-blue">65,548.78</td>
+                                            <td>0.00159338</td>
+                                            <td>0.00</td>
+                                            <td class="p-green">93.2980897</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt="">Binance</span> </td>
+                                            <td><span><img src="img/bcoi.png" alt=""></span>BUSD</td>
+                                            <td class="p-blue">362</td>
+                                            <td>0.00159338</td>
+                                            <td>0.00</td>
+                                            <td class="p-green">26.953315</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt="">Binance</span></td>
+                                            <td><span><img src="img/navc.png" alt="">ETC</span></td>
+                                            <td class="p-blue">65,548.78</td>
+                                            <td>0.00159338	</td>
+                                            <td>0.00%</td>
+                                            <td class="p-green">93.2980897</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt=""></span>Binance</td>
+                                            <td><span><img src="img/bcoi.png" alt="">SHIB</td>
+                                            <td class="p-blue">362</td>
+                                            <td>0.00159338	</td>
+                                            <td>0.00%</td>
+                                            <td class="p-green">26.953315</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt=""></span>Binance</td>
+                                            <td><span><img src="img/bcoi2.png" alt="">OCEAN</td>
+                                            <td class="p-blue">65,548.78</td>
+                                            <td>0.00159338</td>
+                                            <td>0.00</td>
+                                            <td class="p-green">93.2980897</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                
+                                <div class="dashboard__balance-title">
+                                    <h1>Total balance</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
+                                </div>
+                                <div class="dashboard__balance-table">
+                                    <table class="table exchange-table">
+                                        <tr>
+                                            <th>Exchange</th> 
+                                            <th>Asset</th>
+                                            <th>Current Bid</th>
+                                            <th>Free</th>
+                                            <th>Used</th>
+                                            <th>Total</th>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt="">Binance</span> </td>
+                                            <td><span><img src="img/binance.png" alt="">BTNC</span></td>
+                                            <td class="p-blue">65,548.78</td>
+                                            <td>0.00159338</td>
+                                            <td>0.00</td>
+                                            <td class="p-green">93.2980897</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt="">Binance</span> </td>
+                                            <td><span><img src="img/bcoi.png" alt=""></span>BUSD</td>
+                                            <td class="p-blue">362</td>
+                                            <td>0.00159338</td>
+                                            <td>0.00</td>
+                                            <td class="p-green">26.953315</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt="">Binance</span></td>
+                                            <td><span><img src="img/navc.png" alt="">ETC</span></td>
+                                            <td class="p-blue">65,548.78</td>
+                                            <td>0.00159338	</td>
+                                            <td>0.00%</td>
+                                            <td class="p-green">93.2980897</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt=""></span>Binance</td>
+                                            <td><span><img src="img/bcoi.png" alt="">SHIB</td>
+                                            <td class="p-blue">362</td>
+                                            <td>0.00159338	</td>
+                                            <td>0.00%</td>
+                                            <td class="p-green">26.953315</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span><img src="img/binance.png" alt=""></span>Binance</td>
+                                            <td><span><img src="img/bcoi2.png" alt="">OCEAN</td>
+                                            <td class="p-blue">65,548.78</td>
+                                            <td>0.00159338</td>
+                                            <td>0.00</td>
+                                            <td class="p-green">93.2980897</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            @@include('components/_footer.html',{})
+        </div>
+        

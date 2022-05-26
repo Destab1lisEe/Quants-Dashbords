@@ -1,0 +1,57 @@
+
+	@@include('components/_head.html',{
+		"title":"Settings / Security and Password"
+		})
+		<div class="wrapper">
+				<main class="page">
+						<div class="container">
+								@@include('components/_header.html',{})
+								@@include('components/_settings-header.html',{})
+								<div class="settings-security">
+									<div class="settings-security__row">
+										<div class="settings-security__left-side-top">
+											<h3>Security & Passwords</h3>
+											<p>Edit your security informations.</p>
+										</div>
+									</div>
+									<div class="settings-security__password">
+										<h3>Change Password</h3>
+										<div class="settings-security__inputs-row">
+											<label>
+												<p class="gray">Current Password</p> 
+												<input type="password">
+											</label>
+											<label>
+												<p class="gray">New Password</p> 
+												<input type="password">
+											</label>
+											<label>
+												<p class="gray">Confirm Password</p> 
+												<input type="password">
+											</label>
+											<button class="button">Save Changes</button>
+										</div>
+									</div>
+									<div class="settings-security__row">
+										<div class="settings-security__left-side">
+											<h3>Multi-account login</h3>
+											<p>Allow multiple account logins on different devices.</p>
+										</div>
+										@@include('components/_checkbox.html',{})
+									</div>
+									<div class="settings-security__row">
+										<div class="settings-security__left-side">
+											<h3>Google Authenticator</h3>
+											<p>Protect your account with 2Auth.</p>
+										</div>
+										@@include('components/_checkbox.html',{})
+										<div class="settings-security__authentification">
+											<i class="fad fa-shield-alt"></i>
+											<p>2 Factor Authentification - <b>Enabled</b></p>
+										</div>
+									</div>
+								</div>
+						</div>
+				</main>
+				@@include('components/_footer.html',{})
+		</div>

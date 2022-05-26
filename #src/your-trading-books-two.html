@@ -1,0 +1,242 @@
+@@include('components/_head.html',{
+    "title":"Your Trading Books"
+    })
+    <div class="wrapper">
+        <main class="page">
+            <div class="container">
+                @@include('components/_header.html',{})
+                <div class="books">
+                    <div class="books__upper-content">
+                        <div class="books__upper-container">
+                            <a href="overview-full.html"><span><i class="fad fa-grip-horizontal"></i></span> Overview</a>
+                            <div class="books__line"></div>
+                            <a href="live-chart.html"><span><i class="fad fa-chart-bar"></i></span> Live Chart</a>
+                            <div class="books__line"></div>
+                            <a href="open-positions.html"><span><i class="fad fa-location"></i></span>Open Positions <span><h2>7</h2></span></a>
+                            <div class="books__line"></div>
+                            <a href="closed-positions.html"><span><i class="fad fa-location-slash"></i></span>Close Positions <span><h2 class="close">15</h2></span></a>
+                            <div class="books__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-map-signs"></i></span> Deferred</a>
+                            <div class="books__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-store"></i></span> Open Order</a>
+                            <div class="books__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-store-slash"></i></span> Closed Order</a>
+                            <div class="books__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-file-excel"></i></span> Failed</a>
+                            <div class="books__line"></div>
+                            <a href="overview-full.html"><span><i class="fad fa-history"></i></span> History Order</a>
+                            <div class="books__line"></div>
+                        </div>
+                    </div>
+                    <div class="books__table">
+                        <table class="table books-table">
+                            <tr>
+                                <th>Options</th> 
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Server</th>
+                                <th>Date Creat.</th>
+                                <th>Book Open</th>
+                                <th>Deffered</th>
+                                <th>Open Pos</th>
+                                <th>Closed Pos</th>
+                                <th>Closed %</th>
+                                <th>Longs</th>
+                                <th>Shorts</th>
+                                <th>Live P&L</th>
+                                <th>Deffered</th>
+                                <th>Real. P&L</th>
+                                <th>Unreal P&L</th>
+                                <th>Prune<i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                <th><i class="fad fa-trash"></i></th>
+                            </tr>
+                            <tr>
+                                <td>Close</td>
+                                <td>52</td>
+                                <td>Tokyo</td>
+                                <td class="p-blue2">Shared (TOK)</td>
+                                <td>12 jul 2021</td>
+                                <td>6 months</td>
+                                <td class="p-green">18/10</td>
+                                <td>10</td>
+                                <td>3,631</td>
+                                <td>99,26%</td>
+                                <td>3,721</td>
+                                <td>35</td>
+                                <td class="p-red">$-100.00</td>
+                                <td class="p-red">$-180.00</td>
+                                <td class="p-green">$136.31</td>
+                                <td class="p-red">$-326.32</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>135</td>
+                                <td>Position Book 1</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>14 aug 2021</td>
+                                <td>3 months</td>
+                                <td>0/10</td>
+                                <td>9</td>
+                                <td>2,631</td>
+                                <td>99,66%</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>$0.00</td>
+                                <td class="p-red">$-31.00</td>
+                                <td class="p-green">$321.31</td>
+                                <td class="p-red">$-137.32</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>36</td>
+                                <td>Position Book 5</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>18 sep 2021</td>
+                                <td>2 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>1,631</td>
+                                <td>100%</td>
+                                <td>2,3161</td>
+                                <td>13</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-red">$-11.31</td>
+                                <td class="p-green">$326.32</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>26</td>
+                                <td>Position Book 31</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>17 jan 2021</td>
+                                <td>10 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>31</td>
+                                <td>100%</td>
+                                <td>3,5135</td>
+                                <td>6</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-green">$21.74</td>
+                                <td class="p-green">$36.13</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>13</td>
+                                <td>Position Book 3</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>12 oct 2021</td>
+                                <td>2 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>25</td>
+                                <td>31%</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-green">$12.74</td>
+                                <td class="p-green">$0.00</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>13</td>
+                                <td>Position Book 3</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>12 oct 2021</td>
+                                <td>2 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>25</td>
+                                <td>31%</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-green">$12.74</td>
+                                <td class="p-green">$0.00</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>36</td>
+                                <td>Position Book 5</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>18 sep 2021</td>
+                                <td>2 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>1,631</td>
+                                <td>100%</td>
+                                <td>2,3161</td>
+                                <td>13</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-red">$-11.31</td>
+                                <td class="p-green">$326.32</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>36</td>
+                                <td>Position Book 5</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>18 sep 2021</td>
+                                <td>2 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>1,631</td>
+                                <td>100%</td>
+                                <td>2,3161</td>
+                                <td>13</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-red">$-11.31</td>
+                                <td class="p-green">$326.32</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text Cell</td>
+                                <td>36</td>
+                                <td>Position Book 5</td>
+                                <td class="p-blue2">Shared (SGP)</td>
+                                <td>18 sep 2021</td>
+                                <td>2 months</td>
+                                <td>0/10</td>
+                                <td>0</td>
+                                <td>1,631</td>
+                                <td>100%</td>
+                                <td>2,3161</td>
+                                <td>13</td>
+                                <td>$0.00</td>
+                                <td>$0.00</td>
+                                <td class="p-red">$-11.31</td>
+                                <td class="p-green">$326.32</td>
+                                <td>24h</td>
+                                <td class="p-red"><i class="fad fa-trash"></i></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-new-book">
+                        <h1><i class="fal fa-plus"></i>Create New Book</h1>
+                    </div>  
+                </div>
+            </div>
+        </main>
+        @@include('components/_footer.html',{})
+    </div>

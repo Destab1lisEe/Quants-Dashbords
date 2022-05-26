@@ -1,0 +1,106 @@
+
+	@@include('components/_head.html',{
+		"title":"Settings / Personal - Settings"
+		})
+		<div class="wrapper">
+				<main class="page">
+						<div class="container">
+								@@include('components/_header.html',{})
+								@@include('components/_settings-header.html',{})
+								<div class="settings-security personal-settings">
+									<div class="settings-security__row">
+										<div class="settings-security__left-side-top">
+											<h3>Personal Details</h3>
+											<p>Change your personal details.</p>
+										</div>
+									</div>
+									<div class="settings-security__password personal-details-row">
+										<div class="settings-security__inputs-row">
+											<label>
+												<p class="gray">First Name</p>
+												<input type="name">
+											</label>
+											<label>
+												<p class="gray">Last Name</p>
+												<input type="name">
+											</label>
+											<label>
+												<p class="gray">E-mail Address</p>
+												<input type="email">
+											</label>
+											<label>
+												<p class="gray">Country</p>
+												<input type="country">
+											</label>
+											<label>
+												<p class="gray">Address</p>
+												<input type="address">
+											</label>
+											
+										</div>
+									</div>
+									<div class="settings-security__row user-row">
+										<div class="settings-security__left-side">
+											<h3>Social Trading Account </h3>
+											<p>Edit informations you show on your social trading account.</p>
+										</div>
+										<div class="settings-security__inputs-row user-row">
+											<div class="user-photo">
+												<p>Profile Picture</p>
+												<div class="user-wrapper">
+													<img src="img/user.png" alt="user-photo"> 
+													<div class="upload">
+														<p><i class="fad fa-upload"></i>Upload new profile</p>
+													</div>
+												</div>
+											</div>
+											<label>
+												<p class="gray">Displayed Name</p>
+												<input type="name">
+											</label>
+											<label>
+												<p class="gray">Selected Language</p>
+												<input type="language">
+											</label>
+											<label>
+												<p class="gray">Limit who can see my account</p>
+												<input type="number">
+											</label>
+											<label>
+												<p class="gray">Address</p>
+												<input type="address">
+											</label>
+											
+										</div>
+									</div>
+									<div class="settings-notifications__grid personal-settings-wrapper">
+										<div class="settings-notifications__grid-item personal-settings-item">
+											<div class="settings-notifications__grid-item-left">
+												<h3>Dark Mode</h3>
+												<p>Enable Dark mode for feature for Quantitatives platform.</p>
+											</div>
+											@@include('components/_checkbox.html',{})
+										</div>
+										<div class="settings-notifications__grid-item personal-settings-item">
+											<div class="settings-notifications__grid-item-left">
+												<h3>Display Profile Picture</h3>
+												<p>Display your profile picture on social trading platform.</p>
+											</div>
+											@@include('components/_checkbox.html',{})
+										</div>
+										<div class="settings-notifications__grid-item personal-settings-item">
+											<div class="settings-notifications__grid-item-left">
+												<h3>Show location</h3>
+												<p>Show your location on social trading platform.</p>
+											</div>
+											@@include('components/_checkbox.html',{})
+										</div>
+									</div>
+									<div class="settings-security__row">
+										<button class="button save-button">Save Changes</button>
+									</div>
+								</div>	
+						</div>
+				</main>
+				@@include('components/_footer.html',{})
+		</div>

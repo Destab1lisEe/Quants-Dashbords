@@ -1,0 +1,535 @@
+
+	@@include('components/_head.html',{
+        "title":"Live Chart"
+        })
+            <div class="wrapper">
+                <main class="page">
+                    <div class="container">
+                        @@include('components/_header.html',{})
+                    
+                        <section class="live-chart">
+                            <div class="left-sidebar">
+                                <div class="left-sidebar__buttons">
+                                    <img class="open" src="img/vector.png" alt="">
+                                </div>
+                                <div class="sidebar-wrapper">
+                                    <div class="left-sidebar__top">
+                                        <div class="links">
+                                            <a href="#">News</a>
+                                            <a href="#">Order Book</a>
+                                            <a href="#">Info</a>
+                                            <a href="#">Top pairs</a>
+                                        </div>
+                                        <div class="dogecoin">
+                                            <img src="img/dogecoin.png" alt="">
+                                            <h2>DogeCoin</h2>
+                                            <i class="fad fa-arrow-alt-from-bottom"></i>
+                                        </div>
+                                        <h3>Dogecoin Primary statistics</h3>
+                                        <div class="item">
+                                            <h4>Circulating supply</h4>
+                                            <p>285,5125 (29,25%)</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>Maximum supply</h4>
+                                            <p>300,000,000 doge</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>market cap</h4>
+                                            <p>$2,521,122,251</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>Market Dominance</h4>
+                                            <p>2%</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>DOGE Cap vs BTC</h4>
+                                            <p>0.24%</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>All time high price</h4>
+                                            <p>$2.20 (1 day ago)</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>All time high Date</h4>
+                                            <p>03 nov 2021</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>Listed Exchanges</h4>
+                                            <p>72</p>
+                                        </div>
+                                        <div class="item">
+                                            <h4>Current Rank</h4>
+                                            <p>52th</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-sidebar__bot">
+                                        <h1>Current Market C.P. Jumps vs Bitcoin</h1>
+                                        <div class="line"></div>
+                                        <div class="grid">
+                                            <div class="c">
+                                                <h2 class="c-title">C</h2>
+                                                <h2 class="c-title">C</h2>
+                                                <h2 class="c-title">C</h2>
+                                                <h2 class="c-title">C</h2>
+                                                <h2 class="c-title">C</h2>
+                                                <h2 class="c-title">C</h2>
+                                                <h2 class="c-title">C</h2>
+                                            </div>
+                                            <div class="new-price">
+                                                <p>New Price</p>
+                                                <h2>232.525</h2>
+                                                <h2>36.525</h2>
+                                                <h2>11.525</h2>
+                                                <h2>774.312</h2>
+                                                <h2>374.312</h2>
+                                                <h2>741.852</h2>
+                                                <h2>531.852</h2>
+                                            </div>
+                                            <div class="new-cap">
+                                                <p>New Cap</p>
+                                                <h2>$4 bil</h2>
+                                                <h2>$6 bil</h2>
+                                                <h2>$2 bil</h2>
+                                                <h2>$63 bil</h2>
+                                                <h2>$15 bil</h2>
+                                                <h2>$21 bil</h2>
+                                                <h2>$66 bil</h2>
+                                            </div>
+                                            <div class="btc-cap">
+                                                <p>BTC Cap</p>
+                                                <h2 class="green">0.34%</h2>
+                                                <h2 class="green">0.52%</h2>
+                                                <h2 class="green">0.52%</h2>
+                                                <h2 class="yellow">1.84%</h2>
+                                                <h2 class="yellow">2.34%</h2>
+                                                <h2 class="red">5.34%</h2>
+                                                <h2 class="red">1.34%</h2>
+                                            </div>
+                                            <div class="dominan">
+                                                <p>Dominan.</p>
+                                                <h2 class="green">0.14%</h2>
+                                                <h2 class="green">0.24%</h2>
+                                                <h2 class="green">0.24%</h2>
+                                                <h2 class="yellow">1.15%</h2>
+                                                <h2 class="yellow">3.33%</h2>
+                                                <h2 class="red">2.52%</h2>
+                                                <h2 class="red">9.12%</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="chart">
+                                <div class="chart__content">
+                                    <div class="chart__upper-content">
+                                        <div class="item-left">
+                                            <div class="binance">
+                                                <img src="img/binance.png" alt="">
+                                                <h2>Binance</h2>
+                                                <img class="vector" src="img/vector.png" alt="">
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="pairs">
+                                                <div class="content">
+                                                    <img src="img/xpc.png" alt="">
+                                                    <img src="img/mint.png" alt="">
+                                                    <h2>XPC/MINT</h2>
+                                                    <img class="vector" src="img/vector.png" alt="">
+                                                </div>
+                                                <div class="pairs-search">
+                                                    <div class="links">
+                                                        <a href="#"><span><img src="img/star.png" alt=""></span>FAVORITE</a>
+                                                        <a href="#">usdt</a>
+                                                        <a href="#">btc</a>
+                                                        <a href="#">eth</a>
+                                                        <a href="#">bnb</a>
+                                                        <a href="#">All</a>
+                                                    </div>
+                                                    <div class="line"></div>
+                                                    <div class="search">
+                                                        <i class="fad fa-search"></i>
+                                                        <input type="text" placeholder="Search pairs">
+                                                    </div>
+                                                    <div class="grid">
+                                                        <div class="pair">
+                                                            <p>Pair</p>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>AXS/USDT</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>ADX/USDT</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>ADA/ETH</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>AVAX/BTC</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>BETH/ETH</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>BLZ/BTC</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>BRD/USDT</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>BAT/BNB</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>CHR/BTC</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>CVC/ETH</h2>
+                                                            </div>
+                                                            <div class="item">
+                                                                <i class="fas fa-star"></i>
+                                                                <h2>AXS/BNB</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="last-price">
+                                                            <p>Last Price</p>
+                                                            <h2><span>0.03161</span>/$16.2</h2>
+                                                            <h2><span>0.0631</span>/$1.52</h2>
+                                                            <h2><span>0.041</span>/$0.68</h2>
+                                                            <h2><span>0.03161</span>/$93.2</h2>
+                                                            <h2><span>0.08221</span>/$107.2</h2>
+                                                            <h2><span>0.0611</span>/$3216.2</h2>
+                                                            <h2><span>0.03161</span>/$81.35</h2>
+                                                            <h2><span>0.03161</span>/$16.44</h2>
+                                                            <h2><span>0.121</span>/$4.63</h2>
+                                                            <h2><span>0.752</span>/$7.74</h2>
+                                                            <h2><span>0.631</span>/$1.232</h2>
+                                                        </div>
+                                                        <div class="change">
+                                                            <p>24h change</p>
+                                                            <h2>0.14%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2>0.24%</h2>
+                                                            <h2><span>-2.52%</span></h2>
+                                                            <h2><span>-9.12%</span></h2>
+                                                            <h2>0.24%</h2>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="info">
+                                                <div class="item">
+                                                    <h2>3.0006</h2>
+                                                    <p>Last Price</p>
+                                                </div>
+                                                <div class="item">
+                                                    <h2>0.13206</h2>
+                                                    <p>24th change</p>
+                                                </div>
+                                                <div class="item">
+                                                    <h2>4.5125%</h2>
+                                                    <p>24th change %</p>
+                                                </div>
+                                                <div class="item">
+                                                    <h2>70th</h2>
+                                                    <p>Ranked</p>
+                                                </div>
+                                                <div class="item">
+                                                    <h3><span class="fad fa-arrow-down"></span> 4.55%</h3>
+                                                    <p>XPC volume</p>
+                                                </div>
+                                                <div class="item">
+                                                    <h2>19,620</h2>
+                                                    <p>MINT Volume</p>
+                                                </div>
+                                            </div>
+                                            <div class="graphs">
+                                                <div class="realized">
+                                                    <img class="coin" src="img/realized.png" alt="">
+                                                    <div class="titles">
+                                                        <div class="upper">
+                                                            <h2>realized P&L</h2>
+                                                            <h2>1h</h2>
+                                                        </div>
+                                                        <div class="under">
+                                                            <h2>$+215,11 <span><img src="img/graph-green.png" alt=""></span></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="realized">
+                                                    <img class="coin" src="img/unrealized.png" alt="">
+                                                    <div class="titles">
+                                                        <div class="upper">
+                                                            <h2>unrealized P&L</h2>
+                                                            <h2>1h</h2>
+                                                        </div>
+                                                        <div class="under">
+                                                            <h2 class="red">$-6.313,11 <span><img src="img/graph-red.png" alt=""></span></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="chart__line">
+                                    </div>
+                                    <div class="chart__options">
+                                        <div class="button-group-left">
+                                            <a href="#">1m</a>
+                                            <a href="#"><i class="fad fa-chart-bar"></i></a>
+                                            <a class="indicators" href="#"><i class="fad fa-function"></i>Indicators</a>
+                                        </div>
+                                        <div class="button-group-right">
+                                            <a href="#"><i class="fad fa-cogs"></i></a>
+                                            <a href="#"><i class="fad fa-expand-arrows"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="chart__line"></div>
+                                    <img class="chart-image" src="img/chart.png" alt="">
+                                    <div class="chart__line"></div>
+                                    <div class="chart__options">
+                                        <div class="button-group-left">
+                                            <a href="#">1m</a>
+                                            <a href="#">5m</a>
+                                            <a href="#">15m</a>
+                                            <a href="#">30m</a>
+                                            <a href="#">1h</a>
+                                            <a href="#">1d</a>
+                                            <a href="#" class="fad fa-calendar-alt"></a>
+                                        </div>
+                                        <div class="button-group-right">
+                                            <a href="#">15:55:08 (UTC +7)</a>
+                                            <a href="#">%</a>
+                                            <a href="#">log</a>
+                                            <a href="#"><span>auto</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bottom-sidebar">
+                                    <div class="bottom-sidebar__positions">
+                                        <div class="left">
+                                            <div class="open">
+                                                <h2>Open Positions </h2>
+                                                <h3>125</h3>
+                                            </div>
+                                            <div class="closed">
+                                                <h2>Closed Positions</h2>
+                                                <h3>15</h3>
+                                            </div>
+                                            <div class="history">
+                                                <h2>History Order</h2>
+                                                <h3>363</h3>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <p>Advanced Table<span><img src="img/vector.png" alt=""></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-sidebar__table">
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <tr>
+                                                    <th>PAIR <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th> 
+                                                    <th>Side <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Price <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Amount <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Total <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Filled <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Trigger Condition <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Unrealized PNL <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                    <th>Date <i class="far fa-long-arrow-alt-up"><i class="far fa-long-arrow-alt-down"></i></i></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>MANA/BUSD</td>
+                                                    <td class="p-green">Long</td>
+                                                    <td >4.25 BUSD</td>
+                                                    <td>261 MANA</td>
+                                                    <td>880.03 USD</td>
+                                                    <td>0.00%</td>
+                                                    <td class="p-green">6.85</td>
+                                                    <td class="p-red">-58.70% -42.47%</td>
+                                                    <td>3 Dec 9:25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MANA/BUSD</td>
+                                                    <td class="p-red">Short</td>
+                                                    <td>3.25 BUSD</td>
+                                                    <td>361 MANA</td>
+                                                    <td>36.33 USD</td>
+                                                    <td>0.00%</td>
+                                                    <td class="p-green">1.37</td>
+                                                    <td class="p-red">-18.70% -126.37%</td>
+                                                    <td>3 Dec 7:38</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MANA/BUSD</td>
+                                                    <td class="p-green">Long</td>
+                                                    <td>1.11 BUSD</td>
+                                                    <td>741 MANA</td>
+                                                    <td>381.85 USD</td>
+                                                    <td>0.00%</td>
+                                                    <td class="p-green">8.75</td>
+                                                    <td class="p-red">-13.36% -34.17%</td>
+                                                    <td>3 Dec 4:13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MANA/BUSD</td>
+                                                    <td class="p-red">Short</td>
+                                                    <td>1.65 BUSD</td>
+                                                    <td>123 MANA</td>
+                                                    <td>70.47 USD</td>
+                                                    <td>0.00%</td>
+                                                    <td class="p-green">63.31</td>
+                                                    <td>-12.70% -41.74%</td>
+                                                    <td>3 Dec 8:74</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MANA/BUSD</td>
+                                                    <td class="p-red">Short</td>
+                                                    <td>8.63 BUSD</td>
+                                                    <td>325 MANA</td>
+                                                    <td>48.85 USD</td>
+                                                    <td>0.00%</td>
+                                                    <td class="p-green">4.33</td>
+                                                    <td class="p-red">-51.30% -76.47%</td>
+                                                    <td>3 Dec 2:37</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right-sidebar">
+                                <div class="right-sidebar__buttons">
+                                    <img class="open" src="img/vector.png" alt="">
+                                </div>
+                                <div class="sidebar-wrapper">
+                                    <div class="right-sidebar__links">
+                                        <a class="blue" href="#">Limit</a>
+                                        <a href="#">Market</a>
+                                        <a href="#">MMX</a>
+                                        <a href="#">TWAP</a>
+                                        <img src="img/select.png" alt="">
+                                    </div>
+                                    <div class="right-sidebar__buy">
+                                        <div class="buy-sell">
+                                            <a href="#">BUY</a>
+                                            <a class="sell" href="#">SELL</a>
+                                        </div>
+                                        <div class="best">
+                                            <div class="item">
+                                                <h3>BEST BID</h3>
+                                                <h2>3.0006 BUSD</h2>
+                                            </div>
+                                            <div class="item-red">
+                                                <h3>BEST ASK</h3>
+                                                <h2>3.0019 BUSD</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-sidebar__inputs">
+                                        <div class="price">
+                                            <input type="text" placeholder="Price">
+                                            <h2>BUSD</h2>
+                                        </div>
+                                        <div class="amount">
+                                            <input type="text" placeholder="Amount">
+                                            <h2>BTC</h2>
+                                        </div>
+                                        <div class="available">
+                                            <div class="item-left">
+                                                <p><span><i class="fad fa-wallet"></i></span>Available</p>
+                                            </div>
+                                            <div class="item-right">
+                                                <p>316316</p>
+                                                <h4>BUSD</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-sidebar__target">
+                                        <div class="target-buttons">
+                                            <div class="profit">
+                                                <h2>Take Profit</h2>
+                                                <label class="switch change-closed">
+                                                    <input type="checkbox"><span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <div class="loss">
+                                                <h2>Stop Loss</h2>
+                                                <label class="switch change-closed">
+                                                    <input type="checkbox"><span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="price-and-loss">
+                                            <p>Price target</p>
+                                            <p>Loss Target</p>
+                                        </div>
+                                        <div class="inputs">
+                                            <div class="price">
+                                                <input type="text" placeholder="57421">
+                                                <h2>BUSD</h2>
+                                            </div>
+                                            <div class="amount">
+                                                <input type="text" placeholder="3.77">
+                                                <h2>BTC</h2>
+                                            </div>
+                                        </div>
+                                        <div class="target-buttons">
+                                            <div class="profit">
+                                                <h2>One Cancels Other</h2>
+                                                <label class="switch change-closed">
+                                                    <input type="checkbox"><span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selectors">
+                                        <div class="select-container">
+                                            <select name="">
+                                                    <option value="asd">Maker Maker Type</option>
+                                                    <option value="asd">Item 2</option>
+                                                    <option value="asd">Item 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-container">
+                                            <select name="">
+                                                <option value="asd">Price Boundary (Closest)</option>
+                                                <option value="asd">Item 2</option>
+                                                <option value="asd">Item 3</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </section>
+                        
+
+                         
+                    </div>
+                </main>
+                @@include('components/_footer.html',{})
+    
