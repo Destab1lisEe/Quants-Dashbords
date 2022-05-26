@@ -1,0 +1,140 @@
+.books {
+    &__upper-content {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: $bg;
+        overflow-x: auto;
+        margin-bottom: 10px;
+        a {
+            font-size: 17px;
+            line-height: 20px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            opacity: 0.5;
+            white-space: nowrap;
+            &:hover {
+                opacity: 1;
+            }
+            span {
+                margin-right: 5px;
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                }
+                h2 {
+                    font-size: 10px;
+                    color: $white;
+                    background: $percentGreen;
+                    border-radius: 100px;
+                    padding: 4px 14px;
+                    margin-left: 5px;
+                }
+                .close {
+                    background: $percentRed;
+                }
+            }
+        }
+    }
+    &__line {
+        width: 1px;
+        height: 30px;
+        background-color: $border3;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    &__upper-container {
+        min-width: 1500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__table {
+        background: $bg;
+        border: 1px solid $border3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        overflow-x: auto;
+        .table-grid {
+            display: grid;
+            min-width: 1850px;
+            margin-bottom: 10px;
+            grid-template-columns: 0.8fr 0.2fr 1.5fr 1.3fr 1.5fr 1.3fr 0.5fr 0.5fr 0.8fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 0.2fr 0.2fr;
+            .item {
+                .title {
+                    font-size: 16px;
+                    background: $bg;
+                    padding: 20px;
+                    height: 64px;
+                    white-space: nowrap;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        i {
+                            font-size: 15px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                .row-1 {
+                    padding: 20px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        font-size: 14px;
+                    }
+                    h3 {
+                        font-size: 12px;
+                        color: $hover2;
+                    }
+                    .green {
+                        color: $percentGreen;
+                    }
+                    .red {
+                        color: $percentRed;
+                    }
+                    i {
+                        color: $percentRed;
+                    }
+                }
+                .row-2 {
+                    padding: 20px;
+                    background: $text;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        font-size: 14px;
+                    }
+                    h3 {
+                        font-size: 12px;
+                        color: $hover2;
+                    }
+                    .red {
+                        color: $percentRed;
+                    }
+                    .green {
+                        color: $percentGreen;
+                    }
+                    i {
+                        color: $percentRed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-new-book {
+    background: $text;
+    padding: 20px;
+    h1 {
+        font-size: 14px; 
+        i {
+            margin-right: 5px;
+            opacity: 0.4;
+        }
+    }
+}

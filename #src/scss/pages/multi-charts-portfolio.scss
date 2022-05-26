@@ -1,0 +1,195 @@
+.multi-charts{
+    margin-top: 10px;
+    &__grid{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-gap: 10px;
+        @media (max-width: $md1+px){
+						grid-template-columns: 0.5fr 1fr;
+        }
+        @media (max-width: $md3+px){
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+        }
+    }
+    &__grid-left{
+        background-color: $bg;
+        padding: 20px 30px;
+        @media (max-width: $md4+px){
+					padding: 20px;
+					overflow-x: auto;
+				}
+    }
+}
+
+.grid-left{
+    &__title{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        padding: 15px 10px;
+        border: 1px solid $border;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 7px;
+        @media (max-width: $md4+px){
+					overflow-x: auto;
+				}
+        img{
+            width: 25px;
+        }
+        span{
+            margin: auto 7px auto 5px;
+            font-size: 0.9375rem;
+        }
+        p{
+            margin: auto 0 auto 0;
+            font-size: 0.8125rem;
+            text-decoration: underline;
+            color: $percentGreen;
+        }
+        h4{
+            margin: auto 10px auto 0;
+            font-size: 0.875rem;
+        }
+        .fas{
+            margin: auto 15px auto 0;
+            &::before{
+                font-size: 1rem;
+                color: $gray;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.settings-header__search.multi-input{
+    max-width: none;
+    width: 100%;
+    margin: 10px 0 7px 0;
+    padding: 15px 10px;
+    ::placeholder{
+        font-size: 1.125rem;    
+    }
+    input{
+        @media (max-width: $md4+px){
+            display: block;
+        }
+    }
+}
+
+.multi-charts__grid-right{  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+		align-self: flex-start;
+    grid-gap: 25px;
+    @media (max-width: $md1+px){
+        grid-template-columns: repeat(2, 1fr);
+				justify-items: center;
+    }
+    @media (max-width: $md3+px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: auto;
+    }
+}
+
+.grid-right{
+    &__item{
+        padding: 18px 15px 15px 15px;
+        background-color: $bg;
+        @media (max-width: $md3+px){
+            width: 280px;
+        }
+        @media (max-width: $md4+px){
+            width: 100%;
+        }
+        .fas.fa-star{
+            margin: auto 0 25px 5px;
+            color: $gray;
+        }
+        .fas.fa-cog{
+            margin-left: auto;
+            cursor: pointer;
+            @media (max-width: $md3+px){
+                margin-left: 89px;
+            }
+        }
+    }
+}
+
+.item-title{
+    display: flex;
+    justify-content: flex-start;
+		width: 100%;
+    img{
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+    }
+}
+.config-icon{
+	margin-top: 5px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.item-wrapper{
+    p{
+        margin: auto;
+        &:nth-child(2){
+            color: $gray;
+            margin: auto 0 auto 0;
+        }
+    }
+
+}
+
+    .red-item{
+    p{
+        color: $percentRed;
+    }
+}
+
+.fad.fa-arrow-alt-up{
+    font-size: 0.8125rem;
+    color: $percentGreen;
+    margin: 7px 10px auto 0;
+}
+
+.fad.fa-arrow-alt-down{
+    font-size: 0.8125rem;
+    color: $percentRed;
+    margin: auto 10px auto 0;
+}
+
+.title-wrap{
+    display: flex;
+    justify-content: flex-start;
+    h3{
+        color: $gray;
+        font-size: 0.9375rem;
+        margin: auto 0 auto 0;
+    }
+    p{
+        color: #76BDFF;
+        font-size: 0.9375rem;
+        margin: auto 0 auto 10px;
+    }
+    .fad{
+        cursor: pointer;
+        margin: auto 0 auto 6px;
+    }
+    .fas{
+        margin: auto 4px auto 0;
+        &::before{
+            font-size: 1rem;
+            color: $gray;
+            cursor: pointer;
+        }
+    }
+}
+

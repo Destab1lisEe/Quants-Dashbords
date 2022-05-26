@@ -1,0 +1,25 @@
+// JSLinks
+.page-menu {
+	a{
+		display: block;
+		padding-left: 10px;
+		margin-bottom: 15px;
+    border-left: 1px solid #000;
+		color: #1a1a1a;
+    font-size: 1rem;
+		transition: .3s ease;
+		&:hover{
+			color: #ff5a2c;
+		}
+	}
+}
+
+.about-content-right{
+	display: none;
+	&.active{
+		display: block;
+	}
+	@media (max-width: 1350px){
+		display: none;
+	}
+}

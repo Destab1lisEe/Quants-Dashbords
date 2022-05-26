@@ -1,0 +1,111 @@
+@import "../../components/settings-header.scss";
+@import "../../components/checkbox.scss";
+
+.settings-notifications{
+	background: $bg;
+	padding: 35px 50px;
+	margin-bottom: 10px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	h3{
+		font-size: 23px;
+		font-weight: bold;
+		margin-bottom: 5px;
+		@media(max-width: $md2+px) {
+			font-size: 20px;
+		}
+	}
+	p{
+		font-size: 15px;
+		opacity: 0.5;
+		@media(max-width: $md2+px) {
+			font-size: 14px;
+		}
+	}
+	&__row{
+		padding-bottom: 20px;
+		border-bottom: 1px solid $border9;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		&:last-child{
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	&__grid{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		&-item{
+			width: 330px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 20px;
+			@media(max-width: $md3+px) {
+				width: 100%;
+			}
+			i{
+				font-size: 27px;
+				color: $hover;
+			}
+		}
+	}
+}
+
+.settings-notification{
+	background: $bg;
+	padding: 35px 50px;
+	margin-bottom: 10px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	h3{
+		font-size: 23px;
+		font-weight: bold;
+		margin-bottom: 5px;
+		@media(max-width: $md2+px) {
+			font-size: 20px;
+		}
+	}
+	p{
+		font-size: 15px;
+		opacity: 0.5;
+		@media(max-width: $md2+px) {
+			font-size: 14px;
+		}
+	}
+	&__row{
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $border9;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__grid{
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-gap: 20px 8vw;
+		@media(max-width: 1440px) {
+			grid-template-columns: repeat(3,1fr);
+		}
+		@media(max-width: $md3+px) {
+			grid-template-columns: repeat(2,1fr);
+		}
+		@media(max-width: $md4+px) {
+			grid-template-columns: repeat(1,1fr);
+		}
+		p{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			opacity: 1;
+			font-size: 18px;
+		}
+	}
+}

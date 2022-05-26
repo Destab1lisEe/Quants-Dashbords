@@ -1,0 +1,136 @@
+//<Mixins>===============================================================================================
+@import "mixins";
+//</Mixins>===============================================================================================
+
+//<Fonts>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Fonts>=======================================================================================
+
+//<Icons font>==========================================================================================
+//@import "icons";
+//</Icons font>==========================================================================================
+
+//<Initial Font>==========================================================================================
+$fontFamily: 'Lato', sans-serif;
+//</Initial Font>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<vars>===========================================================================================================
+@import "vars";
+//</vars>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+
+body {
+	color: $white;
+	font-size: 16px;
+	-moz-transform: scale(0.95, 0.95); /* Moz-browsers */
+	zoom: 0.95; /* Other non-webkit browsers */
+	zoom: 95%; /* Webkit browsers */
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+section{
+	margin: 10px 0px;
+	&:first-child{
+		margin: 0;
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<Button>===========================================================================================================
+.button{
+	color: $white;
+	background: $accent;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 1.6rem;
+	display: inline-block;
+	align-items: center;
+	transition: .3s ease;
+	cursor: pointer;
+	&:hover{
+		color: $accent;
+		background-color: $white;
+	}
+}
+//</Button>===========================================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms";
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "datepicker";
+//@import "lightgallery";
+//@import "pagging";
+//@import "tabs";
+// @import "spollers";
+// @import "popup";
+@import "components/header";
+@import "components/footer";
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	flex: 1 1 auto;
+}
+//===================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+
+@import "swiper";
+@import "general";
+@import "pages/welcome-pages";
+@import "pages/sign-in";
+@import "pages/forgot-password";
+@import "pages/live-chart";
+@import "pages/empty-state-for-connected-exchangers";
+@import "pages/overview-full";
+@import "pages/overview-full-v-one";
+@import "pages/overview-full-v-two";
+@import "pages/create-and-connect-new-api-key";
+@import "pages/selected-connected-exchange";
+@import "pages/edit-exchange-connection";
+@import "pages/your-trading-books-one";
+@import "pages/your-trading-books-two";
+@import "pages/open-positions";
+@import "pages/faq";
+@import "pages/social";
+@import "pages/social-feed";
+@import "pages/social-portfolio";
+@import "pages/social-stats";
+@import "pages/social-charts";
+@import "pages/multi-charts-portfolio";
+@import "pages/portfolio-pl";
+@import "pages/market-overview";
+@import "components/table";
+
+//Settings
+@import "pages/settings/settings-security";
+@import "pages/settings/settings-notifications";
+@import "pages/settings/settings-terms-conditions";
+@import "pages/settings/settings-pricing";
+@import "pages/settings/settings-personal-details";
+@import "pages/open-positions-modal";
+@import "light-theme";

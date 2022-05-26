@@ -1,0 +1,192 @@
+.table{
+    tr{
+        &:nth-child(even){
+            background-color: $bg2;
+        }
+        &:nth-child(odd){
+            background-color: $bg;
+        }
+    }
+    overflow: auto; 
+    border-collapse: collapse;
+    th{
+        padding: 13px 22px;
+        font-size: 0.938rem;
+				white-space: nowrap;
+    }
+    td{
+        padding: 5px 22px;
+        font-size: 0.875rem;
+				white-space: nowrap;
+    }
+}
+
+.p-blue{
+    color: $tableColor;
+}
+
+.p-blue2{
+    color: $hover2;
+}
+
+.exchange-table{
+    border: 1px solid $border;
+    border-radius: 20px;
+    td{
+        padding: 13px 22px;
+        span{
+            font-size: 0.9375rem;
+            display: inline-block;
+						white-space: nowrap;
+            img{
+                width: 20px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.books-table th .far.fa-long-arrow-alt-up{
+    margin-right: 12px;
+}
+
+.first-row{
+    span{
+        display: inline-block;
+    }
+    img{
+        width: 18px;
+        vertical-align: middle;
+        &:nth-child(2){
+            margin-right: 5px;
+        }
+    }
+}
+
+.books-table{
+    th{
+        padding: 20px 22px;
+        font-size: 1rem;
+        white-space: nowrap;
+        .far.fa-long-arrow-alt-up{
+            margin-left: 12px;
+        }
+    }
+    td{
+        padding: 15px 22px;
+        font-size: 0.875rem;
+        white-space: nowrap;
+    }
+}
+
+.table-green-bg{
+    background-color: $bg-green2;
+}
+
+.table-green-bg2{
+    background-color: $bg-green3;
+}
+
+.table-green-bg3{
+    background-color: $bg-green1;
+}
+
+.table-blue-bg{
+    background-color: $hover3;
+}
+
+.table-bg-yellow{
+    background-color: $bgYellow;
+    color: $darkYellow;
+}
+
+.position-table{
+    scrollbar-color: $bg $gray !important;  
+    th{
+        padding: 17px 13px;
+        font-size: 1rem;
+        .far.fa-long-arrow-alt-up{
+            font-size: 1.25rem;
+        }
+        .far.fa-long-arrow-alt-down{
+            font-size: 1.25rem;
+        }
+        img{
+            width: 25px;
+        }
+    }
+    td{
+        padding: 17px 13px;
+        text-align: center;
+        border-bottom: 1px solid $border10;
+        font-size: 0.875rem;
+        .far.fa-long-arrow-alt-up{
+            color: $white;
+            font-size: 1.25rem;
+        }
+        .far.fa-long-arrow-alt-down{
+            color: white;
+            opacity: 0.4;
+            font-size: 1.25rem;
+        }
+        img{
+            width: 25px;
+        }
+    }
+}
+
+.social-stats-table{
+    border: 1px solid $border3;
+    text-align: left;
+    position: relative;
+    .button{
+        padding: 10px 17px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 4px;
+        background-color: $hover;
+        border: 1px solid transparent;
+        &:hover{
+            color: $white;
+            background-color: transparent;
+            border: 1px solid $border;
+        }
+    }
+    th{
+        padding: 15px 25px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    td{
+        padding: 8px 22px;
+        span{
+            img{
+                width: 35px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.pl-table{
+    text-align: left;
+    td{
+        padding: 16px 22px;
+        span{
+            img{
+                width: 19px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.market-table{
+    border: 1px solid $border;
+    text-align: left;
+    td{
+        font-size: 1.063rem;
+    }
+}

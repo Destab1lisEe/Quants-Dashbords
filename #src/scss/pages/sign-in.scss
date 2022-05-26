@@ -1,0 +1,36 @@
+.welcome {
+	&__inputs {
+		&--sign-in {
+			margin-bottom: 10px;
+			input, textarea {
+				background: #25272E;
+				border: 1px solid $border;
+				box-sizing: border-box;
+				border-radius: 10px;
+				width: 100%;
+				margin-bottom: 10px;
+				padding: 14px 20px;
+				color: $white;
+				font-size: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				
+			}
+			::placeholder {
+				color: $gray;
+				font-size: 18px;
+				line-height: 21px;
+			}
+		}
+	}
+	&__password {
+        margin-bottom: 50px;
+        text-align: right;
+        a {
+            font-size: 16px;
+            line-height: 19px;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.graph {
+    img {
+        min-height: 300px;
+    }
+}
+
+.market-mood {
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .select-container {
+            width: 147px;
+        }
+    }
+    &__grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        overflow-x: auto;
+    }
+    &__grid-item-two {
+        background: $bg;
+        text-align: center;
+        width: 100%;
+        min-width: 800px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .coin {
+            img {
+                width: 46px;
+            }
+        }
+        .exchange-one {
+            .coins {
+                margin-bottom: 5px;
+                img {
+                    width: 25px;
+                    margin-right: 5px;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 18px;
+        }
+        
+    }
+    &__info-grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 15px 0;
+        .red {
+            color: $percentRed;
+        }
+    }
+    &__info-grid-item {
+        h2 {
+            font-size: 15px;
+            white-space: nowrap;
+        }
+    }
+    &__buttons-two {
+        display: flex;
+        justify-content: space-between;
+        .button-long {
+            background: $green;
+            border-radius: 10px;
+            padding: 10px 8px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: $white;
+            width: 145px;
+            margin-right: 5px;
+            h2 {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 17px;
+                margin: 0;
+            }
+            p {
+                font-size: 10px;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .button-short {
+            background: $percentRed;
+            border-radius: 10px;
+            padding: 10px 8px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: $white;
+            width: 145px;
+            h2 {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 17px;
+                margin: 0;
+            }
+            p {
+                font-size: 10px;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.social-charts{
+    margin-top: 10px;
+    padding: 33px 22.57px 10px 22.57px;
+    background-color: $bg;
+    &__tumb{
+        display: inline-block;
+        float: right;
+        margin: 0 20px 67px 0;
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid $border;
+        border-radius: 10px;
+        img{
+            width: 20px;
+        }
+        @media (max-width: $md3+px){
+            float: none;
+        }
+    }
+    &__month{
+        padding: 20px 69px 32px 69px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $bg;
+        h3{
+            font-size: 0.9375rem;
+            color: $gray;
+        }
+        @media (max-width: $md3+px){
+            display: none;
+        }
+    }
+}

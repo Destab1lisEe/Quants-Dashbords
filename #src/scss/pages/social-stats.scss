@@ -1,0 +1,131 @@
+.social-stats{
+    padding: 20px;
+    background-color: $bg;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        margin: 11px 0 21px 0;
+        position: relative;
+        @media (max-width: $md3+px){
+            display: block;
+        }
+        h3{
+            font-size: 0.9375rem;
+            color: $gray;  
+            margin: auto 0 auto 0;
+            @media (max-width: $md4+px){
+                font-size: 0.625rem;   
+            }
+        }
+        h2{
+            font-size: 1.25rem;
+            margin: auto 0 auto 0;
+        }
+    }
+    &__refresh{
+        display: flex;
+        justify-content: flex-start;
+        .fad.fa-repeat-alt{
+            color: $gray;
+        }
+        @media (max-width: $md3+px){
+            position: absolute;
+            right: -11px;
+            top: 0;
+        }
+        a{
+            padding: 10px;
+            border: 1px solid $border;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        .fad.fa-expand-arrows{
+            color: $white;
+        }
+        
+    }
+}
+
+.social-table{
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    @media (max-width: $md2+px){
+        overflow-y: scroll;
+    }
+    :nth-child(5){
+        :nth-child(2){
+            color: $percentRed;
+        }
+    }
+    :nth-child(6){
+        :nth-child(4){
+            color: $percentRed;
+        }
+        :nth-child(10){
+            color: $percentRed;
+        }
+        h3{
+            color: $percentGreen;
+        }
+    }
+}
+
+.dashboard__balance-grid {
+    .social-item {
+        position: relative;
+        h1{
+            color: $white !important;
+            @media (max-width: $md2+px){
+                font-size: 0.625rem !important;
+            }
+        }
+        h2{
+            justify-content: flex-start;
+            color: $white;
+        }
+        .title{
+            display: flex;
+            justify-content: flex-start;
+        }
+        img{
+            width: 35px !important;
+        }
+        span{
+            display: flex;
+            justify-content: flex-start;        
+            p{
+                margin: auto 0 auto 5px;
+            }
+        }
+
+    }
+}
+
+.sort-wrapper{
+    position: absolute;
+    top: 9px;
+    left: -20px;
+}
+
+.fa-filter{
+    &::before{
+        font-size: 1.2rem;
+        color: $gray;
+    }
+}
+
+.far{
+    margin: auto 0 auto 0;
+    color: $gray;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.purchase-button{
+    padding: 10px 16px;
+    background: $hover;
+    border-radius: 4px;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 600;
+}

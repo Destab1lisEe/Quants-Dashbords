@@ -1,0 +1,119 @@
+.user-photo{
+    margin-right: 50px;
+    img{
+        margin-top: 15px;
+        width: 100px;
+    }
+    @media(max-width: $md3+px){
+        text-align: center;
+        margin-right: 0;
+        margin: auto;
+    }
+}
+
+.settings-security__row.user-row{
+    padding-bottom: 40px;
+}
+
+.user-row{  
+    margin-bottom: 0;
+    align-items: center;
+    @media(max-width: $md3+px){
+        border-bottom: transparent;
+    }
+    .settings-security__left-side{
+        width: 100%;
+        max-width: none;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border;
+    }
+}
+
+.personal-details-row{
+    border-bottom: transparent;
+    @media(max-width: $md1+px){
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.settings-security__inputs-row label{
+    opacity: 1;
+    p{
+        font-size: 1.125rem;
+    }
+}
+
+.personal-settings-item{
+    width: 450px;
+    margin-right: 50px;
+    margin-top: 0;
+    padding: 20px 0 20px 0;
+    &:last-child{
+        @media(max-width: $md1+px){
+            border-bottom: 1px solid $border;
+            padding-bottom: 20px;
+        }
+    }
+    @media(max-width: $md1+px){
+        margin-right: 0;
+        border-top: 1px solid $border;
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+.personal-settings{
+    @media(max-width: $md3+px){
+        padding: 20px;
+    }
+}
+
+.personal-settings-wrapper{
+    justify-content: flex-start;
+    border-bottom: 1px solid $border;
+
+}
+
+.user-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    @media(max-width: $md1+px){
+        margin-bottom: 30px;
+    }
+    @media(max-width: $md3+px){
+        display: block;
+        text-align: center;
+    }
+}
+
+.upload{
+    cursor: pointer;    
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: $black2;
+    height: 41px;
+    margin: 42px 0 auto 5px;
+    @media(max-width: $md3+px){
+        display: block;
+        margin: 15px 0 30px 0;
+    }
+    .fad.fa-upload{
+        margin-right: 10px;
+    }
+}
+
+.save-button{
+    font-size: 0.938rem;
+    color: $white;
+    padding: 15px 50px;
+    border: 1px solid $border;
+    background-color: $hover;
+    margin: 40px 0 35px 0;
+    &:hover{
+        color: $hover;
+    }
+    @media(max-width: $md3+px){
+        width: 100%;
+    }
+}
