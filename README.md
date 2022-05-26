@@ -1,7 +1,7 @@
 # Quants-Dashbords
 
 Pages:
-https://destab1lisee.github.io/Quants-Dashbords/closed-positions
+https://destab1lisee.github.io/Quants-Dashbords/closed-positions <br>
 https://destab1lisee.github.io/Quants-Dashbords/create-an-account
 https://destab1lisee.github.io/Quants-Dashbords/create-and-connect-new-api-key
 https://destab1lisee.github.io/Quants-Dashbords/edit-exchange-connection
